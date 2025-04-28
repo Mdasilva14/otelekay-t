@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <h1 class="mb-3">Ziyaretçi Kayıtları</h1>
+
+    <div class="list-group">
+        <div class="visitor-item list-group-item border-0 border-bottom">
+            <div>
+                <strong> </strong>  
+                <span class="text-muted"></span>
+                <div class="text-muted small"></div>
+            </div>
+            <div class="visitor-actions">
+                <a href="#" class="edit-btn btn btn-sm">✏️</a>
+                <a href="#" class="delete-btn btn btn-sm">❌</a>
+            </div>
+        </div>
+
+        <div class="visitor-item list-group-item border-0 border-bottom">
+            <div>
+                <strong></strong>  
+                <span class="text-muted"></span>
+                <div class="text-muted small"></div>
+            </div>
+            <div class="visitor-actions">
+                <a href="#" class="edit-btn btn btn-sm">✏️</a>
+                <a href="#" class="delete-btn btn btn-sm">❌</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

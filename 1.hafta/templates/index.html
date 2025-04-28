@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="hero">
+    <div class="overlay">
+        <h1 class="display-4">Otel Ziyaretlerine Hoş Geldiniz</h1>
+        <p class="lead">Güvenli ve konforlu bir konaklamanın tadını çıkarın.</p>
+    </div>
+</div>
+<style>
+    .hero {
+        background: url('/static/hotel-image.jpg') center/cover no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        position: relative;
+    }
+    .overlay {
+        background: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 10px;
+    }
+</style>
+{% endblock %}
