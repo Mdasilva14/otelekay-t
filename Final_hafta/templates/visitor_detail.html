@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block page_class %}visitordetail-background{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4" style="max-width: 500px; width: 100%; backdrop-filter: blur(2px); background-color: rgba(255, 255, 255, 0.85); border-radius: 12px;">
+        <h2 class="mb-4">Ziyaretçi Detay</h2>
+        <p><strong>Ad Soyad:</strong> {{ visitor.name }}</p>
+        <p><strong>E-posta:</strong> {{ visitor.email }}</p>
+        <p><strong>Telefon:</strong> {{ visitor.phone }}</p>
+        <p><strong>Oda:</strong> {{ visitor.room }}</p>
+
+        <a href="/edit/{{ visitor.id }}" class="btn btn-secondary me-2">Düzenle</a>
+        <a href="/dashboard" class="btn btn-outline-primary">Geri Dön</a>
+    </div>
+</div>
+{% endblock %}
