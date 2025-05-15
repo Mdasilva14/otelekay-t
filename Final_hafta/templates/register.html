@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block page_class %}register-background{% endblock %}
+
+{% block content %}
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4" style="max-width: 500px; width: 100%; backdrop-filter: blur(1px); background-color: rgba(255, 255, 255, 0.85); border-radius: 12px;">
+        <h2 class="mb-4">Ziyaretçi Kaydı</h2>
+
+        {% with messages = get_flashed_messages() %}
+          {% if messages %}
+            <div class="alert alert-success">
+              {% for message in messages %}
+                <p class="mb-0">{{ message }}</p>
+              {% endfor %}
+            </div>
+          {% endif %}
+        {% endwith %}
+
+        <form method="post">
+            <div class="mb-3">
+                <input type="text" class="form-control" name="name" placeholder="Ad" required>
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="surname" placeholder="Soyad" required>
+            </div>
+            <div class="mb-3">
+                <input type="tel" class="form-control" name="phone" placeholder="Telefon Numarası" required>
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" name="email" placeholder="E-posta Adresi (Opsiyonel)">
+            </div>
+            <div class="mb-3">
+                <input type="text" class="form-control" name="room" placeholder="Oda Numarası / Ziyaret Edilen Yer" required>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Ziyaretçi Kaydet</button>
+        </form>
+    </div>
+</div>
+{% endblock %}
