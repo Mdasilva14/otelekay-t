@@ -1,0 +1,98 @@
+
+.login-background {
+    background-image: url('/static/img/anasayfa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.register-background {
+    background-image: url('/static/img/kayit.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.dashboard-background {
+    background-image: url('/static/img/panel.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.index-background {
+    background-image: url('/static/img/anasayfa.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+    
+
+}
+                .hero-section {
+                height: 80vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+
+            h1 {
+                text-shadow: 0px 2px 8px rgb(0, 0, 0);
+            }
+
+.createaccount-background {
+    background-image: url('/static/img/hesap.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
+.editvisitor-background {
+    background-image: url('/static/img/Duzenle.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.visitordetail-background {
+    background-image: url('/static/img/Detay.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+
+}
+.visitors-background {
+    background-image: url('/static/img/Ziyaretçiler.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    width: 100%;
+
+}
+
